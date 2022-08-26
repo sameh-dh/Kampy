@@ -144,11 +144,11 @@ class _PostsState extends State<Posts>   with SingleTickerProviderStateMixin{
                                     ),
                                     // button to delete
                                     Container(
-                                      margin: const EdgeInsets.only(left: 200),
+                                      margin: const EdgeInsets.only(left: 180),
                                       child: IconButton(
-                                        icon: const Icon(Icons.remove),
+                                       icon: const Icon(Icons.delete),
                                         color: const Color.fromARGB(139, 8, 6, 6),
-                                        iconSize: 30.0,
+                                        iconSize: 19.0,
                                         onPressed: () async {
                                           // check if it's the same user
                                           await checkuser(snapshot.data!.docs[i]

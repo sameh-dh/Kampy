@@ -362,8 +362,7 @@ class _KampyEventState extends State<KampyEvent> {
                                                 const EdgeInsets.only(left: 150),
                                             child: IconButton(
                                               icon: const Icon(Icons.delete),
-                                              color: const Color.fromARGB(
-                                                  248, 211, 40, 40),
+                                              color: const Color.fromARGB(139, 8, 6, 6),
                                               iconSize: 25.0,
                                               onPressed: () async {
                                                 await checkuser(snapshot

@@ -131,6 +131,7 @@ final FirebaseAuth auth = FirebaseAuth.instance;
             )
           ],
     ),
+      backgroundColor: HexColor('#7b94c4'),
     body: 
     
     

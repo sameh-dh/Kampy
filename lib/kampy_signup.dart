@@ -283,7 +283,7 @@ child: Stack(
 GestureDetector(
         onTap: () async {
      AuthController.instance.register(emailController.text.trim(), passwordController.text.trim(),nameController.text.trim(),file.toString().trim());
-      //  AuthController.instance.resetPassword("samehdh44@gmail.com");
+      
           },
           child: Container(
           margin:  const EdgeInsets.only(left: 20,right: 20,bottom: 20),

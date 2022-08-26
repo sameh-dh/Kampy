@@ -189,8 +189,9 @@ child: Stack(
 
  // button container
 GestureDetector(
-  onTap: (){
+  onTap: ()async{
     AuthController.instance.login(emailController.text.trim(), passwordController.text.trim());
+    // return await AuthController.instance.resetPassword(emailController.text.trim());
   },
                  child:Container(
           margin:  const EdgeInsets.only(left: 20,right: 20,bottom: 20),

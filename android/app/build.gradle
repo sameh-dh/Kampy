@@ -73,6 +73,8 @@ flutter {
 dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation platform('com.google.firebase:firebase-bom:30.3.1')
+     implementation 'com.google.firebase:firebase-auth'
+      implementation 'com.google.android.gms:play-services-auth:20.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
    
     

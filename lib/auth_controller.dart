@@ -151,13 +151,18 @@ void login(String email, password) async {
   
 }
 // forget passworword
-void  resetPassword(String email) async {
-    await auth
-        .sendPasswordResetEmail(email: email);
-      
+Future<void> resetPassword(email) async {
+  print(email);
+  try{
+    await auth.sendPasswordResetEmail(email: email );
+       
+       
  
+  }on FirebaseAuthException catch(e){
+    print("error:");
+    print( e);
   }
-
+}
 void logOut() async{
  await auth.signOut();
 }

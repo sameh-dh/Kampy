@@ -338,10 +338,10 @@ class _WelcomeState extends State<Welcome> {
                 children: <Widget>[
                   Container(
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(0, 247, 247, 251),
+                      color: const Color.fromARGB(0, 247, 247, 251),
                       borderRadius: BorderRadius.circular(120),
                     ),
-                    margin: const EdgeInsets.only(left: 20, right: 20, top: 70),
+                    margin: const EdgeInsets.only(left: 20, right: 20, ),
                     width: w,
                     child: Column(
                       children: [
@@ -350,29 +350,8 @@ class _WelcomeState extends State<Welcome> {
                           onTap: () {
                             AuthController.instance.logOut();
                           },
-                          child: Container(
-                            margin: const EdgeInsets.only(
-                                left: 20, right: 20, bottom: 20, top: 500),
-                            width: 150,
-                            height: 60,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(700.0),
-                                bottomRight: Radius.circular(700.0),
-                                topLeft: Radius.circular(700.0),
-                                topRight: Radius.circular(700.0),
-                              ),
-                              color: Color.fromARGB(255, 33, 1, 34),
-                            ),
-                            child: const Center(
-                              child: Text("Log out",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white)),
-                            ),
-                          ),
+                          child: Padding(padding:const EdgeInsets.only(left:280) ,
+                          child:Image.asset('images/logout3.png',width: 40,height: 40,))
                         ),
                       ],
                     ),

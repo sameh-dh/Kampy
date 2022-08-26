@@ -140,16 +140,16 @@ class _ShopsState extends State<Shops> {
                                           bottom: 5, left: 10),
                                       child: Text(
                                           snapshot.data!.docs[i]['userName'],
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontSize: 17,
                                           )),
                                     ),
                                     // plus button to delete and update
                                     Container(
-                                      margin: const EdgeInsets.only(left: 212),
+                                      margin: const EdgeInsets.only(left: 200),
                                       child: IconButton(
                                         icon: const Icon(Icons.delete),
-                                        color: Color.fromARGB(248, 211, 40, 40),
+                                        color: const Color.fromARGB(139, 8, 6, 6),
                                         iconSize: 19.0,
                                         onPressed: () async {
                                           // check if it's the same user
@@ -205,11 +205,12 @@ class _ShopsState extends State<Shops> {
                                                 MainAxisAlignment.start,
                                             children: [
                                               Text("\n"),
-                                              const Icon(
-                                                Icons.circle,
-                                                color: Color.fromARGB(248, 0, 0, 0),
-                                                size: 19.0,
-                                              ),
+                                                 Image.asset('images/circle.png' ,width: 15,height: 15,),
+                                              // const Icon(
+                                              //   Icons.circle,
+                                              //   color: Color.fromARGB(248, 0, 0, 0),
+                                              //   size: 19.0,
+                                              // ),
                                               // const Text("Name: ",
                                               //     style: TextStyle(
                                               //       // backgroundColor: Color.fromARGB(255, 183, 180, 185),
@@ -233,9 +234,10 @@ class _ShopsState extends State<Shops> {
                                                 MainAxisAlignment.start,
                                             children: [
                                               const Text("\n" + "\n"),
-                                              const Icon(Icons.description_rounded,
-                                                color: Color.fromARGB(248, 0, 0, 0),
-                                                size: 19.0,),
+                                                  Image.asset('images/online-shop.png' ,width: 20,height: 20,),
+                                              // const Icon(Icons.description_rounded,
+                                              //   color: Color.fromARGB(248, 0, 0, 0),
+                                              //   size: 19.0,),
                                               // const Text("Dscr: ",
                                               //     style: TextStyle(
                                               //       // backgroundColor: Color.fromARGB(255, 183, 180, 185),
@@ -259,9 +261,10 @@ class _ShopsState extends State<Shops> {
                                                 MainAxisAlignment.start,
                                             children: [
                                               const Text("\n" + "\n"),
-                                              const Icon(Icons.price_change_rounded,
-                                                color: Color.fromARGB(248, 0, 0, 0),
-                                                size: 19.0,),
+                                              Image.asset('images/price-tag1.png' ,width: 20,height: 20,),
+                                              // const Icon(Icons.price_change_rounded,
+                                              //   color: Color.fromARGB(248, 0, 0, 0),
+                                              //   size: 19.0,),
                                               // const Text("Price: ",
                                               //     style: TextStyle(
                                               //       // backgroundColor: Color.fromARGB(255, 183, 180, 185),
@@ -286,9 +289,10 @@ class _ShopsState extends State<Shops> {
                                                 MainAxisAlignment.start,
                                             children: [
                                               const Text("\n"),
-                                              const Icon(Icons.phone,
-                                                color: Color.fromARGB(248, 0, 0, 0),
-                                                size: 19.0,),
+                                                Image.asset('images/telephone.png' ,width: 20,height: 20,),
+                                              // const Icon(Icons.phone,
+                                              //   color: Color.fromARGB(248, 0, 0, 0),
+                                              //   size: 19.0,),
                                               // const Text("P-Number: ",
                                               //     style: TextStyle(
                                               //       // backgroundColor: Color.fromARGB(255, 183, 180, 185),
@@ -318,7 +322,7 @@ class _ShopsState extends State<Shops> {
                         ),
                         const Divider(
                           color:
-                              Color.fromARGB(255, 0, 0, 0), //color of divider
+                              Color.fromARGB(39, 68, 67, 67), //color of divider
                           height: 1, //height spacing of divider
                           thickness: 1, //thickness of divier line
                           indent: 15, //spacing at the start of divider
@@ -363,7 +367,7 @@ class _ShopsState extends State<Shops> {
       bottomNavigationBar: Builder(
           builder: (context) => AnimatedBottomBar(
                 defaultIconColor: HexColor('#7b94c4'),
-                activatedIconColor: HexColor('#675975'),
+                activatedIconColor: HexColor('#7b94c4'),
                 background: Colors.white,
                 buttonsIcons: const [
                   Icons.sunny_snowing,
@@ -377,7 +381,7 @@ class _ShopsState extends State<Shops> {
                   Icons.image_rounded,
                   Icons.post_add_rounded
                 ],
-                backgroundColorMiddleIcon: HexColor('#675975'),
+                backgroundColorMiddleIcon:HexColor('#7b94c4'),
                 onTapButton: (i) {
                   setState(() {
                     index = i;
